@@ -8,12 +8,12 @@ The project targets the **STM32F4xx** series microcontroller and is implemented 
 ## Features
 - **Multi-tasking**: RTOS-based task management (e.g., task switching, scheduling)
 - **Hardware abstraction**: Drivers and initialization for on-chip peripherals
-- **Inter-task communication**: Semaphore/mutex handling (if applicable)
+- **Inter-task communication**: Semaphore/mutex handling
 - **Peripheral control**: GPIO, UART, or other peripherals interfaced via RTOS tasks
 
 ## Hardware and Software Requirements
-- **Microcontroller**: STM32F4 series (STM32F407 or similar)
-- **IDE**: STM32CubeIDE or Keil uVision
+- **Microcontroller**: STM32F4 series
+- **IDE**: STM32CubeIDE
 - **RTOS**: FreeRTOS
 - **Programming Language**: C
 
@@ -21,18 +21,18 @@ The project targets the **STM32F4xx** series microcontroller and is implemented 
 
 1. **Clone the repository**:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/GhitaRk/STM32-RTOS.git
     ```
 
-2. **Open the project** in STM32CubeIDE or Keil uVision.
+2. **Open the project** in STM32CubeIDE.
 
-3. **Connect the STM32 board** via ST-Link or USB for programming and debugging.
+3. **Connect the STM32 board** via USB for programming and debugging.
 
 4. **Compile and Flash** the program to the STM32 microcontroller.
 
 ## Requirements
 - **STM32CubeMX**: For generating HAL drivers and initial project setup.
-- **STM32CubeIDE** or **Keil**: For writing and debugging the project.
+- **STM32CubeIDE**: For writing and debugging the project.
 - **FreeRTOS**: The RTOS kernel that handles task scheduling.
 
 ### Files Overview
@@ -40,7 +40,7 @@ The project targets the **STM32F4xx** series microcontroller and is implemented 
 #### main.c
 The `main.c` file is the entry point of the project. It initializes the hardware and starts the RTOS scheduler. It contains:
 - System clock configuration
-- Hardware initialization (GPIO, UART, etc.)
+- Hardware initialization (GPIO, UART, Timers, etc.)
 - Task creation and initialization
 - RTOS kernel startup
 
